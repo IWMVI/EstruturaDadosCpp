@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include "Fila.h"
 
 using namespace std;
@@ -19,8 +20,16 @@ int main()
 
         cin >> opcao;
 
+        //Limpar buffer.
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
         switch (opcao)
         {
+
+        case 0:
+            cout << "Finalizado!\n\n";
+            break;
+
         case 1:
             cout << "\nInforme o valor a ser inserido: ";
             cin >> item;

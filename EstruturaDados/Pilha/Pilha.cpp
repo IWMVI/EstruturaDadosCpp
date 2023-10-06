@@ -11,8 +11,8 @@ Pilha::Pilha()
 }
 Pilha::~Pilha()
 {
-    No *temp = noTopo;
-    while (temp != NULL)
+    No *temp;
+    while (noTopo != NULL)
     {
         temp = noTopo;
         noTopo = noTopo->proximo;
@@ -70,12 +70,5 @@ tipoItem Pilha::pop()
 }
 void Pilha::print()
 {
-    No *temp = noTopo;
-    cout << "\nPilha [ ";
-    while (temp != NULL)
-    {
-        cout << temp->valor << " ";
-        temp = temp->proximo;
-    }
-    cout << "]\n";
+    cout << "\nElemento no topo da pilha: " << noTopo -> valor << "\n";
 }

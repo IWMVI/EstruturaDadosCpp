@@ -20,6 +20,11 @@ int main()
 
         switch (opcao)
         {
+
+        case 0:
+            cout<< "\n Finalizado! \n\n";
+            break;
+            
         case 1:
             cout << "\nInforme o valor a ser inserido: ";
             cin >> item;
