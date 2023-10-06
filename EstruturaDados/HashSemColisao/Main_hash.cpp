@@ -37,6 +37,10 @@ int main()
         switch (opcao)
         {
 
+        case 0:
+            cout << "\nFinalizado!\n\n";
+            break;
+        
         case 1:
             cout << "\nInforme o RA: ";
             cin >> ra;
